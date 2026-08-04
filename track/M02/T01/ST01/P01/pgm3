@@ -1,0 +1,10 @@
+class main{
+    public static void main(string[] args){
+        System.out.println("Monday");
+        System.out.print("Tuesday");
+        System.ou.print("Wednesday");
+        System.out.print("friday");
+        System.out.println("Saturday");
+        System.out.println("Sunday")
+    }
+}
