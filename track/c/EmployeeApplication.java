@@ -16,8 +16,8 @@ class Employee{
         System.out.println(e1.name);
         System.out.println(e1.salary);
         
-        e2.work();
         Employee e2=new Employee();
+        e2.work();
         e2.id = 12;
         e2.name="Sree";
         e2.salary=35000;

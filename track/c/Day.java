@@ -1,5 +1,5 @@
 package track.c;
-public class Day {
+public class day {
     public static void main(String[] args){
         System.out.println("Monday");
         System.out.print("Tuesday");

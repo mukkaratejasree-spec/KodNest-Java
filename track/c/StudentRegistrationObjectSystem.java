@@ -1,13 +1,13 @@
 package track.c;
 import java.util.Scanner;
 
-class Student {
-    int registrationId;
-    String name;
-    double attendancePercentage;
-}
-
 public class StudentRegistrationObjectSystem {
+    static class Student {
+        int registrationId;
+        String name;
+        double attendancePercentage;
+    }
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
