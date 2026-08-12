@@ -1,60 +1,63 @@
-package track.c;
+package track.class_Practice;
 import java.util.Scanner;
-public class ScannerMethodsDemo {
+public class ScannerExample {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        // Byte
+        // 1. byte
         System.out.print("Enter a byte value: ");
         byte b = sc.nextByte();
-        System.out.println("Byte value = " + b);
 
-        // Short
+        // 2. short
         System.out.print("Enter a short value: ");
         short s = sc.nextShort();
-        System.out.println("Short value = " + s);
 
-        // Int
+        // 3. int
         System.out.print("Enter an int value: ");
         int i = sc.nextInt();
-        System.out.println("Int value = " + i);
 
-        // Long
+        // 4. long
         System.out.print("Enter a long value: ");
         long l = sc.nextLong();
-        System.out.println("Long value = " + l);
 
-        // Float
+        // 5. float
         System.out.print("Enter a float value: ");
         float f = sc.nextFloat();
-        System.out.println("Float value = " + f);
 
-        // Double
+        // 6. double
         System.out.print("Enter a double value: ");
         double d = sc.nextDouble();
-        System.out.println("Double value = " + d);
 
-        // Boolean
+        // 7. boolean
         System.out.print("Enter a boolean value (true/false): ");
         boolean bool = sc.nextBoolean();
-        System.out.println("Boolean value = " + bool);
 
-        // Clear the newline
+        // Clear the leftover newline
         sc.nextLine();
 
-        // next()
+        // 8. Single word
         System.out.print("Enter one word: ");
         String word = sc.next();
-        System.out.println("Word = " + word);
 
-        // Clear the newline
+        // Clear the leftover newline
         sc.nextLine();
 
-        // nextLine()
+        // 9. Full line
         System.out.print("Enter a full sentence: ");
         String line = sc.nextLine();
-        System.out.println("Sentence = " + line);
+
+        // Display all values
+        System.out.println("\n----- Output -----");
+        System.out.println("Byte    : " + b);
+        System.out.println("Short   : " + s);
+        System.out.println("Int     : " + i);
+        System.out.println("Long    : " + l);
+        System.out.println("Float   : " + f);
+        System.out.println("Double  : " + d);
+        System.out.println("Boolean : " + bool);
+        System.out.println("Word    : " + word);
+        System.out.println("Line    : " + line);
 
         sc.close();
     }

@@ -1,4 +1,3 @@
-package track.M01;
 import java.util.Scanner;
 
 public class InputWithLoops {

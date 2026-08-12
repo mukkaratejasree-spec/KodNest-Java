@@ -1,4 +1,4 @@
-package track.c;
+package track.class_Practice;
 public class number {
     public static void main(String[] args){
         int num=10;

@@ -1,4 +1,4 @@
-package track.c;
+package track.class_Practice;
 public class day {
     public static void main(String[] args){
         System.out.println("Monday");

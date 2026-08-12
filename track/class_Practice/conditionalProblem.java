@@ -1,4 +1,4 @@
-package track.c;
+package track.class_Practice;
 
 public class conditionalProblem {
     public static void main(String[] args) {

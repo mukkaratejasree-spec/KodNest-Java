@@ -1,16 +1,16 @@
-package track.c;
+package track.class_Practice;
 
-public class Nesteddowhileloop {
+public class Nestedwhileloop {
     public static void main(String[] args) {
         int i = 1;
-        do {
+        while (i <= 5) {
             int j = 1;
-            do {
+            while (j <= 5) {
                 System.out.println(j);
                 j++;
-            } while (j <= 5);
+            }
             System.out.println();
             i++;
-        } while (i <= 5);
+        }
     }
 }

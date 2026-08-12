@@ -1,4 +1,4 @@
-package track.c;
+package track.class_Practice;
 public class Nestedloop {
     public static void main(String[] args) {
         for(int i=1; i<= 5; i++){

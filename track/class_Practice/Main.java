@@ -1,4 +1,4 @@
-package track.c;
+package track.class_Practice;
 import java.util.Scanner;
 
 public class Main {

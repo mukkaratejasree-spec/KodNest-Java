@@ -1,4 +1,4 @@
-package track.c;
+package track.class_Practice;
 
 public class while_pgm {
     public static void main(String[] args){

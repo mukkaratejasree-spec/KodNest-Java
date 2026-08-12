@@ -1,4 +1,4 @@
-package track.c;
+package track.class_Practice;
 
     class Student {
         // Instance variables
