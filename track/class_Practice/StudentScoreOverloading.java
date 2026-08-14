@@ -2,7 +2,7 @@ package track.class_Practice;
 
 import java.util.Scanner;
 
-public class hgyug {
+public class StudentScoreOverloading {
     static class Student {
         String name;
 
