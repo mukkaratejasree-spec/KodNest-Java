@@ -44,5 +44,6 @@ public class StudentRegistrationObjectSystem {
 
         System.out.println(s1.registrationId + " - " + s1.name + " - " + s1.attendancePercentage + "%");
         System.out.println(s2.registrationId + " - " + s2.name + " - " + s2.attendancePercentage + "%");
+        sc.close();
     }
 }
