@@ -15,23 +15,22 @@ class Employee {
         System.out.println("Employee Name: " + name);
         System.out.println("Employee Role: " + role);
     }
-}
 
-class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        try (Scanner sc = new Scanner(System.in)) {
+            // Read employee name
+            String name = sc.nextLine();
 
-        // Read employee name
-        String name = sc.nextLine();
+            // Create exactly one object
+            Employee e = new Employee();
 
-        // Create exactly one object
-        Employee e = new Employee();
+            // Store name
+            e.name = name;
 
-        // Store name
-        e.name = name;
-
-        // Display profile
-        e.displayProfile();
-        sc.close();
+            // Display profile
+            e.displayProfile();
+        }
     }
 }
+
+

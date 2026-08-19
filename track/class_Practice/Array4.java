@@ -1,27 +1,26 @@
 package track.class_Practice;
+
 import java.util.Scanner;
 
 public class Array4 {
     public static void main(String[] args) {
+        try (Scanner sc = new Scanner(System.in)) {
+            int arr[] = new int[5];
+            int total = 0;
 
-        Scanner sc = new Scanner(System.in);
+            // Taking input
+            for (int i = 0; i < arr.length; i++) {
+                arr[i] = sc.nextInt();
+            }
 
-        int arr[] = new int[5];
-        int total = 0;
+            // Calculating total
+            for (int i = 0; i < arr.length; i++) {
+                total += arr[i];
+            }
 
-        // Taking input
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = sc.nextInt();
+            // Printing total
+            System.out.println("Total: " + total);
         }
-
-        // Calculating total
-        for (int i = 0; i < arr.length; i++) {
-            total += arr[i];
-        }
-
-        // Printing total
-        System.out.println("Total: " + total);
-
-        sc.close();
     }
 }
+

@@ -1,33 +1,33 @@
 package track.class_Practice;
+
 import java.util.Scanner;
 
-class DeliveryCalculator {
-    // One-parameter overload
-    int calculateCharge(int distance) {
-        return distance * 5;
-    }
-
-    // Two-parameter overload
-    int calculateCharge(int distance, int expressFee) {
-        return distance * 5 + expressFee;
-    }
-}
-
 public class DeliveryChargeOverloading {
+    static class DeliveryCalculator {
+        // One-parameter overload
+        int calculateCharge(int distance) {
+            return distance * 5;
+        }
+
+        // Two-parameter overload
+        int calculateCharge(int distance, int expressFee) {
+            return distance * 5 + expressFee;
+        }
+    }
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
+            int distance = scanner.nextInt();
+            int expressFee = scanner.nextInt();
 
-        int distance = scanner.nextInt();
-        int expressFee = scanner.nextInt();
+            DeliveryCalculator dc = new DeliveryCalculator();
 
-        DeliveryCalculator dc = new DeliveryCalculator();
+            // Call the one-parameter overload
+            System.out.println("Standard Charge: " + dc.calculateCharge(distance));
 
-        // Call the one-parameter overload
-        System.out.println("Standard Charge: " + dc.calculateCharge(distance));
-
-        // Call the two-parameter overload
-        System.out.println("Express Charge: " + dc.calculateCharge(distance, expressFee));
-
-        scanner.close();
+            // Call the two-parameter overload
+            System.out.println("Express Charge: " + dc.calculateCharge(distance, expressFee));
+        }
     }
 }
+

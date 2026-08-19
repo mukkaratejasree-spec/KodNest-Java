@@ -1,6 +1,7 @@
 package track.class_Practice;
 
-    class Student {
+public class StudentApplication {
+    static class Student {
         // Instance variables
         String name;
         int age;
@@ -14,17 +15,15 @@ package track.class_Practice;
             this.height = height;
         }
 
-    void display() {
+        void display() {
             System.out.println(name);
             System.out.println(age);
             System.out.println(height);
+        }
     }
-}
-public class StudentApplication {
+
     public static void main(String[] args) {
-
         Student s = new Student();
-
         s.input("Raja", 18, 5.5);
         s.display();
     }

@@ -24,24 +24,23 @@ public class StudentScoreOverloading {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
+            // Read the full name and two scores
+            String name = scanner.nextLine();
+            int first = scanner.nextInt();
+            int second = scanner.nextInt();
 
-        // Read the full name and two scores
-        String name = scanner.nextLine();
-        int first = scanner.nextInt();
-        int second = scanner.nextInt();
+            // Create one Student object
+            Student student = new Student();
 
-        // Create one Student object
-        Student student = new Student();
+            // Store and print the name
+            student.setName(name);
+            student.showName();
 
-        // Store and print the name
-        student.setName(name);
-        student.showName();
-
-        // Call both showScore() methods
-        student.showScore(first);
-        student.showScore(first, second);
-
-        scanner.close();
+            // Call both showScore() methods
+            student.showScore(first);
+            student.showScore(first, second);
+        }
     }
 }
+

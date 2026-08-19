@@ -10,9 +10,7 @@ public class Arrayoriginal{
 
         int[] snapshot = new int[original.length];
 
-        for (int i = 0; i < original.length; i++) {
-            snapshot[i] = original[i];
-        }
+        System.arraycopy(original, 0, snapshot, 0, original.length);
 
         int[] liveView = original;
 

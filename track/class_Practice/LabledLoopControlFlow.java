@@ -4,17 +4,15 @@ public class LabledLoopControlFlow {
     public static void main(String[] args) {
 
         outer:
-        for(int i=1; i<=5; i++){
-            inner:
-            for(int j=1; j<=5;j++){
-                if(j == 3){
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= 5; j++) {
+                if (j == 3) {
                     break outer;
                 }
-                System.out.println("i : "+i + "j : " +j);
+                System.out.println("i : " + i + "j : " + j);
             }
             System.out.println();
         }
-        
     }
-    
 }
+

@@ -2,28 +2,27 @@ package track.class_Practice;
 
 import java.util.Scanner;
 
-class Student {
-    String name;
-
-    Student(String name) {
-        this.name = name;
-    }
-
-    void display() {
-        System.out.println("Student Name: " + name);
-    }
-}
-
 public class InitializeStudentName {
+    static class Student {
+        String name;
+
+        Student(String name) {
+            this.name = name;
+        }
+
+        void display() {
+            System.out.println("Student Name: " + name);
+        }
+    }
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
+            String name = scanner.nextLine();
 
-        String name = scanner.nextLine();
+            Student s = new Student(name);
 
-        Student s = new Student(name);
-
-        s.display();
-
-        scanner.close();
+            s.display();
+        }
     }
 }
+
