@@ -4,29 +4,25 @@ import java.util.Scanner;
 
 public class CinemaSeatAnalyzer {
     public static void main(String[] args) {
+        try (Scanner sc = new Scanner(System.in)) {
+            int rows = sc.nextInt();
+            int columns = sc.nextInt();
 
-        Scanner sc = new Scanner(System.in);
+            int[][] seats = new int[rows][columns];
 
-        int rows = sc.nextInt();
-        int columns = sc.nextInt();
+            int count = 0;
 
-        int[][] seats = new int[rows][columns];
+            for (int i = 0; i < rows; i++) {
+                for (int j = 0; j < columns; j++) {
+                    seats[i][j] = sc.nextInt();
 
-        int count = 0;
-
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < columns; j++) {
-
-                seats[i][j] = sc.nextInt();
-
-                if (seats[i][j] == 0) {
-                    count++;
+                    if (seats[i][j] == 0) {
+                        count++;
+                    }
                 }
             }
+
+            System.out.println("Available seats: " + count);
         }
-
-        System.out.println("Available seats: " + count);
-
-        sc.close();
     }
 }

@@ -1,4 +1,4 @@
-package class_Practice;
+package track.class_Practice;
 
 import java.util.Scanner;
 
@@ -26,4 +26,5 @@ public class ArrayTwoDimensional {
         }
     }
 }
+
 

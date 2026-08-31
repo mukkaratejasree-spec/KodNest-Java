@@ -3,33 +3,29 @@ import java.util.Scanner;
 
 public class AttendanceReport {
     public static void main(String[] args) {
+        try (Scanner scanner = new Scanner(System.in)) {
+            int classes = scanner.nextInt();
+            int days = scanner.nextInt();
 
-        Scanner scanner = new Scanner(System.in);
+            int[][] attendance = new int[classes][days];
 
-        int classes = scanner.nextInt();
-        int days = scanner.nextInt();
-
-        int[][] attendance = new int[classes][days];
-
-        // Read the matrix
-        for (int i = 0; i < classes; i++) {
-            for (int j = 0; j < days; j++) {
-                attendance[i][j] = scanner.nextInt();
-            }
-        }
-
-        // Calculate total attendance for every day
-        for (int j = 0; j < days; j++) {
-
-            int total = 0;
-
+            // Read the matrix
             for (int i = 0; i < classes; i++) {
-                total += attendance[i][j];
+                for (int j = 0; j < days; j++) {
+                    attendance[i][j] = scanner.nextInt();
+                }
             }
 
-            System.out.println("Day " + (j + 1) + " total: " + total);
-        }
+            // Calculate total attendance for every day
+            for (int j = 0; j < days; j++) {
+                int total = 0;
 
-        scanner.close();
+                for (int i = 0; i < classes; i++) {
+                    total += attendance[i][j];
+                }
+
+                System.out.println("Day " + (j + 1) + " total: " + total);
+            }
+        }
     }
 }

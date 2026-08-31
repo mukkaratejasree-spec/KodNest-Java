@@ -4,23 +4,19 @@ import java.util.Scanner;
 
 public class FindSumAndAverage {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        try (Scanner sc = new Scanner(System.in)) {
+            int n = sc.nextInt();
+            int arr[] = new int[n];
 
-        int n = sc.nextInt();
-        int arr[] = new int[n];
+            int total = 0;
 
-        int total = 0;
-
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-            total += arr[i];
+            for (int i = 0; i < n; i++) {
+                arr[i] = sc.nextInt();
+                total += arr[i];
+            }
+            double average = (double) total / n;
+            System.out.println(total);
+            System.out.printf("%.2f", average);
         }
-        double average = (double) total / n;
-        System.out.println(total);
-        System.out.printf("%.2f", average);
-
-        sc.close();
-
     }
-
 }
