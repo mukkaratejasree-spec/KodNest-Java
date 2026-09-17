@@ -6,8 +6,8 @@ public class StringMethod5 {
         String s2 = "Poori";
         String s3 = s1+ s2;
         System.out.println(s3);
-        String t1 = new String("Anu");
-        String t2 = new String("Banu");
+        String t1 = "Anu";
+        String t2 = "Banu";
         String res = t1.concat(t2);
         System.out.println(res);
     }
