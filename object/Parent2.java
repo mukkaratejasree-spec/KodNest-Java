@@ -1,5 +1,5 @@
 package object;
-
+/*ABSTARCT METHOD & ABSTARCT CLASS */
 abstract class Parent2 {
     abstract void disp1();
     abstract void disp2();
