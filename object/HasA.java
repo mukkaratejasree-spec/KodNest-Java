@@ -1,27 +1,27 @@
 package object;
-class OS
+class Heart
 {
-    OS() {
-        System.out.println("OS constructor");
+    Heart() {
+        System.out.println("Heart constructor");
     }
-    void checkOS() {
-        System.out.println("i am checking os now");
+    void checkHeart() {
+        System.out.println("i am checking heart now");
     }
 }
-class MobilePhone
+class Human 
 {
-    OS o = new OS();
-    void checkOS() {
-        System.out.println("i am checking mobile os now");
+    Heart h = new Heart();
+    void checkHumanHeart() {
+        System.out.println("i am checking human heart now");
     }
-    void makeCall() {
-        System.out.println("calling....");
+    void human() {
+        System.out.println("Human constructor");
     }
 }
 public class HasA {
     public static void main(String[] args) {
-        MobilePhone mp = new MobilePhone();
-        mp.checkOS();
-        mp.makeCall();
+        Human h = new Human();
+        h.checkHumanHeart();
+        h.human();
     }
 }
