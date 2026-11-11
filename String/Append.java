@@ -15,7 +15,7 @@ builder.append(" " + suffix);
 // Insert the prefix and append the suffix.
 
 System.out.println("Edited text: " + builder);
-
+scanner.close();
 }
 
 }
