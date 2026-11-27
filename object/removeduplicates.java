@@ -13,7 +13,6 @@ public class removeduplicates {
             this.roll = roll;
             this.name = name;
         }
-
         @Override
         public boolean equals(Object obj) {
             if (this == obj) return true;
@@ -21,7 +20,6 @@ public class removeduplicates {
             Student s = (Student) obj; // Fixed: proper cast syntax (Student) obj
             return this.roll == s.roll && Objects.equals(this.name, s.name);
         }
-
         @Override 
         public int hashCode() {
             return Objects.hash(roll, name); // Fixed: Objects.hash(...) with dot and semicolon
@@ -47,7 +45,6 @@ public class removeduplicates {
         hs.add(s1);
         hs.add(s2);
         hs.add(s3);
-
         System.out.println(hs);
     }
 }
